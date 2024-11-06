@@ -1,0 +1,64 @@
+/* Tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dhurjati&family=Noto+Sans+Symbols:wght@100..900&display=swap");
+
+.price-font {
+  font-family: "Dhurjati", sans-serif;
+}
+.main-font {
+  font-family: "Noto Sans Symbols", sans-serif;
+}
+.title-font {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+::-webkit-scrollbar-tumb:hover {
+  background: #1f2937;
+}
+::-webkit-scrollbar-track {
+  background: #4b5563;
+}
+
+/* main styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+}
+
+/* discount custom style */
+.discount .swiper-button-next,
+.discount .swiper-button-prev {
+  background: white;
+  border-radius: 50%;
+  border: 1px solid gray;
+  width: 40px;
+  height: 40px;
+  box-shadow: 2px 3px 7px #64748b;
+}
+.discount .swiper-button-next::after,
+.discount .swiper-button-prev::after {
+  font-size: 1rem;
+  color: #64748b;
+}
+.discount .swiper-button-disabled {
+  opacity: 0;
+  visibility: hidden;
+}
